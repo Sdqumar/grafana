@@ -265,3 +265,12 @@ export const checkLogsError = (logRow: LogRowModel): { hasError: boolean; errorM
 
 export const escapeUnescapedString = (string: string) =>
   string.replace(/\\r\\n|\\n|\\t|\\r/g, (match: string) => (match.slice(1) === 't' ? '\t' : '\n'));
+export const CheckisJSON = (string: string) => {
+  try {
+    let o = JSON.parse(string);
+    if (o && typeof o === 'object') {
+      return JSON.stringify(o, null, 2);
+    }
+  } catch (e) {}
+  return false;
+};

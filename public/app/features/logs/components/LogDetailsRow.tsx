@@ -5,6 +5,8 @@ import { Field, LinkModel, LogLabelStatsModel, GrafanaTheme2, LogRowModel, CoreA
 import { reportInteraction } from '@grafana/runtime';
 import { withTheme2, Themeable2, ClipboardButton, DataLinkButton, IconButton } from '@grafana/ui';
 
+import { CheckisJSON } from '../utils';
+
 import { LogLabelStats } from './LogLabelStats';
 import { getLogRowStyles } from './getLogRowStyles';
 
@@ -174,6 +176,9 @@ class UnThemedLogDetailsRow extends PureComponent<Props, State> {
       onClickFilterLabel,
       onClickFilterOutLabel,
     } = this.props;
+
+    const isJSON = CheckisJSON(parsedValue);
+
     const { showFieldsStats, fieldStats, fieldCount, mouseOver } = this.state;
     const styles = getStyles(theme);
     const style = getLogRowStyles(theme);
@@ -219,7 +224,13 @@ class UnThemedLogDetailsRow extends PureComponent<Props, State> {
           onMouseEnter={this.hoverValueCopy.bind(this)}
           onMouseLeave={this.hoverValueCopy.bind(this)}
         >
-          {parsedValue}
+          {isJSON ? (
+            <div>
+              <pre>{isJSON}</pre>
+            </div>
+          ) : (
+            parsedValue
+          )}
           {mouseOver && (
             <ClipboardButton
               getText={() => parsedValue}

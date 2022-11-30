@@ -1,5 +1,6 @@
 import { css, cx } from '@emotion/css';
 import React, { PureComponent } from 'react';
+import ReactJson from 'react-json-view';
 
 import { Field, LinkModel, LogLabelStatsModel, GrafanaTheme2, LogRowModel, CoreApp } from '@grafana/data';
 import { reportInteraction } from '@grafana/runtime';
@@ -226,7 +227,7 @@ class UnThemedLogDetailsRow extends PureComponent<Props, State> {
         >
           {isJSON ? (
             <div>
-              <pre>{isJSON}</pre>
+              <ReactJson src={JSON.parse(parsedValue)} theme="colors" name={null} />
             </div>
           ) : (
             parsedValue

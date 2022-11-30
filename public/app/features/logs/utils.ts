@@ -267,9 +267,9 @@ export const escapeUnescapedString = (string: string) =>
   string.replace(/\\r\\n|\\n|\\t|\\r/g, (match: string) => (match.slice(1) === 't' ? '\t' : '\n'));
 export const CheckisJSON = (string: string) => {
   try {
-    let o = JSON.parse(string);
-    if (o && typeof o === 'object') {
-      return JSON.stringify(o, null, 2);
+    let obj = JSON.parse(string);
+    if (obj && typeof obj === 'object') {
+      return obj;
     }
   } catch (e) {}
   return false;

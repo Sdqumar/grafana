@@ -227,7 +227,12 @@ class UnThemedLogDetailsRow extends PureComponent<Props, State> {
         >
           {isJSON ? (
             <div>
-              <ReactJson src={JSON.parse(parsedValue)} theme="colors" name={null} />
+              <ReactJson
+                src={JSON.parse(parsedValue)}
+                enableClipboard={({ src }) => (typeof src === 'string' ? navigator.clipboard.writeText(src) : src)}
+                theme="colors"
+                name={null}
+              />
             </div>
           ) : (
             parsedValue

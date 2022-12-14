@@ -3003,15 +3003,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.16.7":
-  version: 7.20.6
-  resolution: "@babel/runtime@npm:7.20.6"
-  dependencies:
-    regenerator-runtime: ^0.13.11
-  checksum: 42a8504db21031b1859fbc0f52d698a3d2f5ada9519eb76c6f96a7e657d8d555732a18fe71ef428a67cc9fc81ca0d3562fb7afdc70549c5fec343190cbaa9b03
-  languageName: node
-  linkType: hard
-
 "@babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.7.6":
   version: 7.19.4
   resolution: "@babel/runtime@npm:7.19.4"
@@ -7340,6 +7331,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/watcher@npm:^2.0.7":
+  version: 2.0.7
+  resolution: "@parcel/watcher@npm:2.0.7"
+  dependencies:
+    node-addon-api: ^3.2.1
+    node-gyp: latest
+    node-gyp-build: ^4.3.0
+  checksum: 9cf92fbf4486ad6af441286ce85bcd53a03445abb069c61485d3e0aafabe3da3008be06e38f386c3c0e117f743ed1fe04a88936be1daaf9c455e1e7e5b15f562
+  languageName: node
+  linkType: hard
+
 "@petamoriken/float16@npm:^3.4.7":
   version: 3.5.0
   resolution: "@petamoriken/float16@npm:3.5.0"
@@ -10204,13 +10206,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/base16@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@types/base16@npm:1.0.2"
-  checksum: 5bc587d45066dae6fb14a4a7f72e57044fa1a8057eed86d4005f9e38a0c38b83009828ac3072e6e9e4be1cf5d5032849690adf8cd51efd545fa281bee5cf0fa5
-  languageName: node
-  linkType: hard
-
 "@types/body-parser@npm:*":
   version: 1.19.1
   resolution: "@types/body-parser@npm:1.19.1"
@@ -11125,13 +11120,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.178, @types/lodash@npm:^4.14.182":
-  version: 4.14.190
-  resolution: "@types/lodash@npm:4.14.190"
-  checksum: 353a55a1222a57224ead8bd3379fabb2e3e3f6685f599c48b1b66f099d8e9e015e6c6352c6e2275954004c3bb510377804c63117233c6f187700b6ab78adfa02
-  languageName: node
-  linkType: hard
-
 "@types/logfmt@npm:^1.2.1":
   version: 1.2.2
   resolution: "@types/logfmt@npm:1.2.2"
@@ -11360,7 +11348,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prop-types@npm:15.7.5, @types/prop-types@npm:^15.7.5":
+"@types/prop-types@npm:15.7.5":
   version: 15.7.5
   resolution: "@types/prop-types@npm:15.7.5"
   checksum: 5b43b8b15415e1f298243165f1d44390403bb2bd42e662bca3b5b5633fdd39c938e91b7fce3a9483699db0f7a715d08cef220c121f723a634972fdf596aec980
@@ -15768,7 +15756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-convert@npm:^1.9.0, color-convert@npm:^1.9.3":
+"color-convert@npm:^1.9.0":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
   dependencies:
@@ -15793,20 +15781,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-name@npm:^1.0.0, color-name@npm:^1.1.4, color-name@npm:~1.1.4":
+"color-name@npm:^1.1.4, color-name@npm:~1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
-  languageName: node
-  linkType: hard
-
-"color-string@npm:^1.6.0":
-  version: 1.9.1
-  resolution: "color-string@npm:1.9.1"
-  dependencies:
-    color-name: ^1.0.0
-    simple-swizzle: ^0.2.2
-  checksum: c13fe7cff7885f603f49105827d621ce87f4571d78ba28ef4a3f1a104304748f620615e6bf065ecd2145d0d9dad83a3553f52bb25ede7239d18e9f81622f1cc5
   languageName: node
   linkType: hard
 
@@ -15816,16 +15794,6 @@ __metadata:
   bin:
     color-support: bin.js
   checksum: 9b7356817670b9a13a26ca5af1c21615463b500783b739b7634a0c2047c16cef4b2865d7576875c31c3cddf9dd621fa19285e628f20198b233a5cfdda6d0793b
-  languageName: node
-  linkType: hard
-
-"color@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "color@npm:3.2.1"
-  dependencies:
-    color-convert: ^1.9.3
-    color-string: ^1.6.0
-  checksum: f81220e8b774d35865c2561be921f5652117638dcda7ca4029262046e37fc2444ac7bbfdd110cf1fd9c074a4ee5eda8f85944ffbdda26186b602dd9bb05f6400
   languageName: node
   linkType: hard
 
@@ -16982,7 +16950,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:3.1.1, csstype@npm:^3.0.10":
+"csstype@npm:3.1.1":
   version: 3.1.1
   resolution: "csstype@npm:3.1.1"
   checksum: 1f7b4f5fdd955b7444b18ebdddf3f5c699159f13e9cf8ac9027ae4a60ae226aef9bbb14a6e12ca7dba3358b007cee6354b116e720262867c398de6c955ea451d
@@ -21639,6 +21607,7 @@ __metadata:
     "@opentelemetry/api": 1.2.0
     "@opentelemetry/exporter-collector": 0.25.0
     "@opentelemetry/semantic-conventions": 1.7.0
+    "@parcel/watcher": ^2.0.7
     "@pmmmwh/react-refresh-webpack-plugin": 0.5.8
     "@popperjs/core": 2.11.6
     "@prometheus-io/lezer-promql": ^0.37.0-rc.1
@@ -21854,7 +21823,6 @@ __metadata:
     react-hook-form: 7.5.3
     react-i18next: ^12.0.0
     react-inlinesvg: 3.0.1
-    react-json-tree: ^0.17.0
     react-json-view: ^1.21.3
     react-moveable: 0.40.0
     react-popper: 2.3.0
@@ -23296,13 +23264,6 @@ __metadata:
   version: 0.2.1
   resolution: "is-arrayish@npm:0.2.1"
   checksum: eef4417e3c10e60e2c810b6084942b3ead455af16c4509959a27e490e7aee87cfb3f38e01bbde92220b528a0ee1a18d52b787e1458ee86174d8c7f0e58cd488f
-  languageName: node
-  linkType: hard
-
-"is-arrayish@npm:^0.3.1":
-  version: 0.3.2
-  resolution: "is-arrayish@npm:0.3.2"
-  checksum: 977e64f54d91c8f169b59afcd80ff19227e9f5c791fa28fa2e5bce355cbaf6c2c356711b734656e80c9dd4a854dd7efcf7894402f1031dfc5de5d620775b4d5f
   languageName: node
   linkType: hard
 
@@ -26352,7 +26313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.curry@npm:^4.0.1, lodash.curry@npm:^4.1.1":
+"lodash.curry@npm:^4.0.1":
   version: 4.1.1
   resolution: "lodash.curry@npm:4.1.1"
   checksum: 9192b70fe7df4d1ff780c0260bee271afa9168c93fe4fa24bc861900240531b59781b5fdaadf4644fea8f4fbcd96f0700539ab294b579ffc1022c6c15dcc462a
@@ -32135,21 +32096,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-base16-styling@npm:^0.9.1":
-  version: 0.9.1
-  resolution: "react-base16-styling@npm:0.9.1"
-  dependencies:
-    "@babel/runtime": ^7.16.7
-    "@types/base16": ^1.0.2
-    "@types/lodash": ^4.14.178
-    base16: ^1.0.0
-    color: ^3.2.1
-    csstype: ^3.0.10
-    lodash.curry: ^4.1.1
-  checksum: 1e61e1158ee5250ad68860840368f9228685680df15385c0fc4d5c63dd0925f27f4f1d1762134de623fe005e75ef9543191aa648cde2c16d0153341d00ceeecb
-  languageName: node
-  linkType: hard
-
 "react-beautiful-dnd@npm:13.1.1":
   version: 13.1.1
   resolution: "react-beautiful-dnd@npm:13.1.1"
@@ -32596,22 +32542,6 @@ __metadata:
   version: 18.1.0
   resolution: "react-is@npm:18.1.0"
   checksum: d206a0fe6790851bff168727bfb896de02c5591695afb0c441163e8630136a3e13ee1a7ddd59fdccddcc93968b4721ae112c10f790b194b03b35a3dc13a355ef
-  languageName: node
-  linkType: hard
-
-"react-json-tree@npm:^0.17.0":
-  version: 0.17.0
-  resolution: "react-json-tree@npm:0.17.0"
-  dependencies:
-    "@babel/runtime": ^7.18.3
-    "@types/lodash": ^4.14.182
-    "@types/prop-types": ^15.7.5
-    prop-types: ^15.8.1
-    react-base16-styling: ^0.9.1
-  peerDependencies:
-    "@types/react": ^16.3.0 || ^17.0.0 || ^18.0.0
-    react: ^16.3.0 || ^17.0.0 || ^18.0.0
-  checksum: 71c092e97441f27a866ccf0135c910f9bd2fa9a1bf6f3f127ce72fd55cb7b79065acec056ceacbf995718000a81ae1583d9884da6899bce8e071d102c78340cd
   languageName: node
   linkType: hard
 
@@ -33437,13 +33367,6 @@ __metadata:
   version: 0.11.1
   resolution: "regenerator-runtime@npm:0.11.1"
   checksum: 3c97bd2c7b2b3247e6f8e2147a002eb78c995323732dad5dc70fac8d8d0b758d0295e7015b90d3d444446ae77cbd24b9f9123ec3a77018e81d8999818301b4f4
-  languageName: node
-  linkType: hard
-
-"regenerator-runtime@npm:^0.13.11":
-  version: 0.13.11
-  resolution: "regenerator-runtime@npm:0.13.11"
-  checksum: 27481628d22a1c4e3ff551096a683b424242a216fee44685467307f14d58020af1e19660bf2e26064de946bad7eff28950eae9f8209d55723e2d9351e632bbb4
   languageName: node
   linkType: hard
 
@@ -34944,15 +34867,6 @@ __metadata:
   version: 0.2.0
   resolution: "simple-is@npm:0.2.0"
   checksum: 9ab19289a1da9551f91715f4ae838790c13752ccf7e8b7dce69e4b056f4ab7c2b13486fe987ab00c01294cb33a63bb08fd66a1a4170c70fcc6d3a310bf406e8c
-  languageName: node
-  linkType: hard
-
-"simple-swizzle@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "simple-swizzle@npm:0.2.2"
-  dependencies:
-    is-arrayish: ^0.3.1
-  checksum: a7f3f2ab5c76c4472d5c578df892e857323e452d9f392e1b5cf74b74db66e6294a1e1b8b390b519fa1b96b5b613f2a37db6cffef52c3f1f8f3c5ea64eb2d54c0
   languageName: node
   linkType: hard
 

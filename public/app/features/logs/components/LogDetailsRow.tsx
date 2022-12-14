@@ -162,7 +162,21 @@ class UnThemedLogDetailsRow extends PureComponent<Props, State> {
     const mouseOver = !this.state.mouseOver;
     this.setState({ mouseOver });
   }
+  unsecuredCopyToClipboard(text: string) {
+    console.log('Copying to clipboard: ', text);
 
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+    } catch (err) {
+      console.error('Unable to copy to clipboard', err);
+    }
+    document.body.removeChild(textArea);
+  }
   render() {
     const {
       theme,
@@ -229,7 +243,7 @@ class UnThemedLogDetailsRow extends PureComponent<Props, State> {
             <div>
               <ReactJson
                 src={JSON.parse(parsedValue)}
-                enableClipboard={({ src }) => (typeof src === 'string' ? navigator.clipboard.writeText(src) : src)}
+                enableClipboard={({ src }) => (typeof src === 'string' ? this.unsecuredCopyToClipboard(src) : src)}
                 theme="colors"
                 name={null}
               />
